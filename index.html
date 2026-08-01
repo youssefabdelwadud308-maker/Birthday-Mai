@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>❤️ Happy Birthday ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- النجوم -->
+<div id="stars"></div>
+
+<!-- القلوب -->
+<div id="hearts"></div>
+
+<!-- شاشة البداية -->
+
+<section id="intro">
+
+<div class="intro-box">
+
+<h1 id="typing">
+
+اوعي تفتكري إن عيد ميلادك
+هيعدي كده وخلاص... 😉
+
+</h1>
+
+<p id="typing2">
+
+استني...
+لسه المفاجأة ما بدأتش ❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- شاشة الباسورد -->
+
+<section id="passwordPage">
+
+<div class="glass">
+
+<h1>
+
+🔐 Secret Code
+
+</h1>
+
+<p>
+
+لو وصلتي لحد هنا...
+
+يبقى أكيد معاكي المفتاح ❤️
+
+</p>
+
+<input
+type="password"
+id="password"
+placeholder="Password">
+
+<button onclick="checkPassword()">
+
+دخول
+
+</button>
+
+<span id="error"></span>
+
+</div>
+
+</section>
+
+<!-- الموقع -->
+
+<section id="website">
+
+<audio id="music" loop>
+
+<source src="song.mp3" type="audio/mpeg">
+
+</audio>
+
+<header>
+
+<h1>
+
+Happy Birthday
+
+</h1>
+
+<h2>
+
+My Princess 👑❤️
+
+</h2>
+
+</header>
+
+<section class="counter">
+
+<h3>
+
+من يوم
+
+30 / 08 / 2023
+
+</h3>
+
+<div class="boxes">
+
+<div>
+
+<span id="years">0</span>
+
+<p>سنة</p>
+
+</div>
+
+<div>
+
+<span id="months">0</span>
+
+<p>شهر</p>
+
+</div>
+
+<div>
+
+<span id="days">0</span>
+
+<p>يوم</p>
+
+</div>
+
+<div>
+
+<span id="hours">0</span>
+
+<p>ساعة</p>
+
+</div>
+
+<div>
+
+<span id="minutes">0</span>
+
+<p>دقيقة</p>
+
+</div>
+
+<div>
+
+<span id="seconds">0</span>
+
+<p>ثانية</p>
+
+</div>
+
+</div>
+
+</section>
+
+  <!-- رسالة الحب -->
+
+<section class="love-section">
+
+<h2>
+
+💌 رسالة ليكي
+
+</h2>
+
+<div class="letter">
+
+<p id="loveText">
+
+كل سنة وانتي أجمل نعمة ربنا رزقني بيها...
+
+يمكن الكلام ميقدرش يوصف قد إيه بحب وجودك في حياتي...
+
+بس كل يوم بيعدي بتأكد أكتر إنك أحلى حاجة حصلتلي...
+
+ضحكتك بتغير يومي...
+
+وصوتك بيطمني...
+
+ووجودك بيخليني أحس إن الدنيا لسه فيها حاجات تستاهل.
+
+يمكن مقدرش أجيبلك الدنيا...
+
+لكن أوعدك...
+
+أفضل أحاول أخلي كل يوم في حياتك أحلى من اللي قبله.
+
+كل سنة وانتي بخير يا أجمل بنت في الدنيا...
+
+وكل سنة وانتي سبب سعادتي...
+
+بحبك ❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- معرض الصور -->
+
+<section class="gallery">
+
+<h2>
+
+📸 ذكرياتنا
+
+</h2>
+
+<div class="slider">
+
+<button class="left" onclick="prevImage()">
+
+❮
+
+</button>
+
+<img
+id="slider"
+src="photo1.jpg">
+
+<button class="right" onclick="nextImage()">
+
+❯
+
+</button>
+
+</div>
+
+</section>
+
+<!-- الهدية -->
+
+<section class="gift">
+
+<h2>
+
+عندي ليكي مفاجأة 🎁
+
+</h2>
+
+<button id="giftButton" onclick="openGift()">
+
+🎁 افتحي الهدية
+
+</button>
+
+<div id="giftBox">
+
+<h2>
+
+🎉 Happy Birthday 🎉
+
+</h2>
+
+<p>
+
+أتمنى أشوف ضحكتك دايمًا...
+
+وأفضل سبب في إنك تكوني سعيدة...
+
+وربنا يحققلك كل اللي بتتمنيه...
+
+وكل سنة وانتي معايا ❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- التورتة -->
+
+<section class="cake">
+
+<h2>
+
+🎂
+
+</h2>
+
+<p>
+
+اعملي أمنية...
+
+وطفي الشمع ❤️
+
+</p>
+
+</section>
+
+<!-- النهاية -->
+
+<section class="final">
+
+<h2>
+
+One Last Thing...
+
+❤️
+
+</h2>
+
+<button onclick="lastMessage()">
+
+اضغطي هنا
+
+</button>
+
+</section>
+
+<div id="lastScreen">
+
+<h1>
+
+وأجمل قرار أخدته في حياتي...
+
+إني حبيتك ❤️
+
+</h1>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
