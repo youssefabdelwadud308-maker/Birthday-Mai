@@ -516,3 +516,26 @@ setTimeout(()=>{
     console.log("❤️ Happy Birthday My Princess ❤️");
 
 },1000);
+
+/* ==========================================
+   تشغيل الأغنية عند أول لمسة
+========================================== */
+
+let musicStarted = false;
+
+function startMusic() {
+
+    if (musicStarted) return;
+
+    musicStarted = true;
+
+    if (music) {
+
+        music.play().catch(() => {});
+
+    }
+
+}
+
+document.addEventListener("touchstart", startMusic, { once: true });
+document.addEventListener("click", startMusic, { once: true });
