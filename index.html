@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- النجوم -->
+<div id="stars"></div>
+
+<!-- القلوب -->
+<div id="hearts"></div>
+
+<!-- شاشة البداية (هتفضل زي ما هي) -->
+
+<div id="intro">
+
+<div class="intro-content">
+
+<h1 id="typing">
+اوعي تفتكري إن عيد ميلادك يعدي كده وخلاص 😉
+</h1>
+
+<p id="typing2">
+استني... لسه المفاجأة ما بدأتش ❤️
+</p>
+
+</div>
+
+</div>
+
+<!-- شاشة الباسورد -->
+
+<div id="passwordPage" style="display:none;">
+
+<div class="glass">
+
+<h1>🔒</h1>
+
+<h2>اكتبي الباسورد ❤️</h2>
+
+<input
+type="password"
+id="password"
+placeholder="Password">
+
+<button onclick="checkPassword()">
+
+دخول
+
+</button>
+
+<p id="error"></p>
+
+</div>
+
+</div>
+
+<!-- الموقع -->
+
+<div id="website" style="display:none;">
+
+<header>
+
+<h1>
+
+Happy Birthday My Princess 👑❤️
+
+</h1>
+
+<p>
+
+كل سنة وانتي أجمل حاجة حصلتلي ❤️
+
+</p>
+
+</header>
+
+<!-- العداد -->
+
+<section class="counter">
+
+<h2>
+
+من يوم 30 / 08 / 2023 ❤️
+
+</h2>
+
+<div class="counter-box">
+
+<div>
+
+<span id="years">0</span>
+
+<p>سنة</p>
+
+</div>
+
+<div>
+
+<span id="months">0</span>
+
+<p>شهر</p>
+
+</div>
+
+<div>
+
+<span id="days">0</span>
+
+<p>يوم</p>
+
+</div>
+
+<div>
+
+<span id="hours">0</span>
+
+<p>ساعة</p>
+
+</div>
+
+<div>
+
+<span id="minutes">0</span>
+
+<p>دقيقة</p>
+
+</div>
+
+<div>
+
+<span id="seconds">0</span>
+
+<p>ثانية</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- رسالة الحب -->
+
+<section class="love-section">
+
+<h2>
+
+💌 رسالة ليكي
+
+</h2>
+
+<p id="loveText">
+
+يمكن الكلام ميقدرش يوصف كل اللي جوايا...
+
+بس كل يوم بيعدي وأنا معاكي بحس إن اختيار قلبي كان صح.
+
+وجودك فرق معايا في حاجات كتير...
+
+وخلى للحياة طعم مختلف.
+
+يمكن بنختلف...
+
+يمكن بنتخانق...
+
+بس في الآخر...
+
+مفيش حد أتمنى أشوفه سعيد غيرك.
+
+كل سنة وانتي بخير...
+
+وكل سنة وانتي أجمل بنت في عيني.
+
+وكل سنة وأنا بتمنى أفضل جنبك.
+
+❤️
+
+</p>
+
+</section>
+
+<!-- معرض الصور -->
+
+<section class="gallery">
+
+<h2>
+
+📸 ذكرياتنا
+
+</h2>
+
+<div class="slider-box">
+
+<button onclick="prevImage()">
+
+❮
+
+</button>
+
+<img
+id="slider"
+src="photo1.jpg"
+alt="photo">
+
+<button onclick="nextImage()">
+
+❯
+
+</button>
+
+</div>
+
+</section>
+
+<!-- الهدية -->
+
+<section class="gift">
+
+<h2>
+
+🎁 عندي مفاجأة ليكي
+
+</h2>
+
+<button onclick="openGift()">
+
+افتحي الهدية ❤️
+
+</button>
+
+<div id="giftBox" style="display:none;">
+
+<h3>
+
+🎀 Happy Birthday 🎀
+
+</h3>
+
+<p>
+
+يمكن الهدية بسيطة...
+
+لكن كل حرف في الموقع ده معمول علشان يرسم ابتسامة على وشك.
+
+وأتمنى إن كل عيد ميلاد يعدي وإحنا مع بعض.
+
+كل سنة وانتي أجمل نعمة في حياتي.
+
+بحبك جدًا ❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- الرسالة الأخيرة -->
+
+<section class="final">
+
+<h2>
+
+❤️ رسالة أخيرة
+
+</h2>
+
+<div class="final-card">
+
+<p>
+
+لو خيروني ألف مرة...
+
+كل مرة هختارك.
+
+ولو رجع بيا الزمن...
+
+هحبك من أول يوم برضه.
+
+يمكن الأيام بتتغير...
+
+بس اللي جوايا ليكي عمره ما هيتغير.
+
+كل سنة وانتي أجمل حاجة حصلتلي.
+
+❤️
+
+</p>
+
+<button onclick="lastMessage()">
+
+آخر مفاجأة ❤️
+
+</button>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- الشاشة الأخيرة -->
+
+<div id="lastScreen" style="display:none;">
+
+<div class="last-box">
+
+<h1>
+
+Happy Birthday
+
+❤️
+
+</h1>
+
+<h2>
+
+My Princess 👑
+
+</h2>
+
+<p>
+
+كل سنة وانتي بخير...
+
+وكل سنة وأنا محظوظ إنك في حياتي.
+
+أتمنى أشوف ضحكتك دايمًا...
+
+وأفضل سبب فيها.
+
+بحبك ❤️
+
+</p>
+
+</div>
+
+</div>
+
+<audio
+id="music"
+src="song.mp3"
+loop>
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
