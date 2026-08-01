@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- شاشة الباسورد -->
+<div id="passwordScreen" class="screen">
+    <div class="login-box">
+        <h1>❤️ أهلاً يا حبيبتي ❤️</h1>
+        <p>اكتبي الباسورد علشان تفتحي المفاجأة 🎁</p>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password">
+
+        <button onclick="checkPassword()">
+            دخول
+        </button>
+
+        <p id="error"></p>
+    </div>
+</div>
+
+<!-- الموقع -->
+<div id="mainContent" style="display:none;">
+
+    <!-- موسيقى -->
+    <audio id="bgMusic" loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- القلوب -->
+    <div id="hearts"></div>
+
+    <!-- العنوان -->
+    <section class="hero">
+
+        <h1>
+            Happy Birthday My Princess ❤️
+        </h1>
+
+        <p class="subtitle">
+            كل سنة وانتي أجمل حاجة حصلتلي 💖
+        </p>
+
+    </section>
+
+    <!-- العداد -->
+    <section class="counter-section">
+
+        <h2>
+            من يوم 30/08/2023 ❤️
+        </h2>
+
+        <div class="counter">
+
+            <div class="box">
+                <span id="years">0</span>
+                <small>سنة</small>
+            </div>
+
+            <div class="box">
+                <span id="months">0</span>
+                <small>شهر</small>
+            </div>
+
+            <div class="box">
+                <span id="days">0</span>
+                <small>يوم</small>
+            </div>
+
+            <div class="box">
+                <span id="hours">0</span>
+                <small>ساعة</small>
+            </div>
+
+            <div class="box">
+                <span id="minutes">0</span>
+                <small>دقيقة</small>
+            </div>
+
+            <div class="box">
+                <span id="seconds">0</span>
+                <small>ثانية</small>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- رسالة الحب -->
+    <section class="love-letter">
+
+        <h2>💌 رسالة ليكي</h2>
+
+        <p id="letter">
+
+            كل سنة وانتي أجمل إنسانة في حياتي...
+
+            وجودك هو أحلى هدية من ربنا...
+
+            كل لحظة معاكي بتبقى أحلى من اللي قبلها...
+
+            أتمنى أفضل جنبك وأشوف ضحكتك طول العمر...
+
+            بحبك أكتر من أي كلام ممكن يوصف ❤️
+
+        </p>
+
+    </section>
+
+    <!-- السلايدر -->
+    <section class="gallery">
+
+        <h2>📸 ذكرياتنا</h2>
+
+        <div class="slider">
+
+            <img id="sliderImage" src="photo1.jpg">
+
+            <button class="prev" onclick="prevImage()">
+                ❮
+            </button>
+
+            <button class="next" onclick="nextImage()">
+                ❯
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- زر الهدية -->
+    <section class="gift-section">
+
+        <button id="giftBtn" onclick="openGift()">
+
+            🎁 افتحي الهدية
+
+        </button>
+
+    </section>
+
+    <!-- صندوق الهدية -->
+
+    <div id="giftBox" class="gift-popup">
+
+        <h2>
+            🎉 Happy Birthday 🎉
+        </h2>
+
+        <p>
+
+            أتمنى السنة دي تكون كلها سعادة ونجاح وفرحة ليكي ❤️
+
+            وإن كل أحلامك تتحقق...
+
+            وربنا يخليكي ليا دايمًا يا أجمل بنت في الدنيا.
+
+        </p>
+
+    </div>
+
+    <!-- التورتة -->
+
+    <section class="cake-section">
+
+        <h2>
+            🎂
+        </h2>
+
+        <h3>
+
+            Make A Wish ✨
+
+        </h3>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
